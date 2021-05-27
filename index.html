@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>le'to cafe</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+    <link href="css/leto-cafe.css" rel="stylesheet" />
+  </head>
+  <body>
+    <p>Date/Time: <span id="datetime"></span></p>
+
+      <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+      </script>
+
+
+    <div class="tm-container">
+      <div class="tm-text-white tm-page-header-container">
+        <i class="fas fa-mug-hot fa-2x tm-page-icon"></i>
+        <h1 class="tm-page-header">Le'to Cafe</h1>
+      </div>
+      <div class="tm-main-content">
+        <div id="tm-intro-img"></div>
+        <!-- Coffee Menu -->
+        <section class="tm-section">
+          <h2 class="tm-section-header">Coffee Menu</h2>
+          <div class="tm-responsive-table">
+            <table>
+              <tr class="tm-tr-header">
+                <th>&nbsp;</th>
+                <th>Hot</th>
+                <th>Iced</th>
+                <th>Blended</th>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Americano</td>
+                <td>$10</td>
+                <td>$15</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Cuppucino</td>
+                <td>$15</td>
+                <td>$18</td>
+                <td>$20</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Fresh Latte</td>
+                <td>$10</td>
+                <td>$18</td>
+                <td>$20</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Mocha</td>
+                <td>$15</td>
+                <td>$18</td>
+                <td>$20</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Espresso</td>
+                <td>$10</td>
+                <td>$15</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Black Coffee</td>
+                <td>$15</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Double Shot Expresso</td>
+                <td>$20</td>
+                <td>$20</td>
+                <td>-</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <!-- Tea Menu -->
+        <section class="tm-section">
+          <h2 class="tm-section-header">Tea Menu</h2>
+          <div class="tm-responsive-table">
+            <table>
+              <tr class="tm-tr-header">
+                <th>&nbsp;</th>
+                <th>Hot</th>
+                <th>Iced</th>
+                <th>Addon</th>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Pure White Milk</td>
+                <td>$5</td>
+                <td>$10</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Hong Kong Tea</td>
+                <td>$8</td>
+                <td>$12</td>
+                <td>$4</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Taiwan Tea</td>
+                <td>$4</td>
+                <td>$10</td>
+                <td>$4</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Bubble Tea</td>
+                <td>$8</td>
+                <td>$12</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Mixed Fruit Tea</td>
+                <td>$10</td>
+                <td>$10</td>
+                <td>$8</td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Original Tea</td>
+                <td>$12</td>
+                <td>$12</td>
+                <td>-</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <!-- Special Items -->
+        <section class="tm-section">
+          <h2 class="tm-section-header">Special Items</h2>
+          <div class="tm-special-items">
+            <figure class="tm-special-item">
+              <img src="img/leto-cafe-11.jpg" alt="Image" class="tm-special-item-img" />
+              <figcaption>
+                <span class="tm-item-name">Molten Cake</span>
+                <span class="tm-item-price">$40</span>
+              </figcaption>
+            </figure>
+
+            <figure class="tm-special-item">
+              <img src="img/leto-cafe-13.jpg" alt="Image" class="tm-special-item-img" />
+              <figcaption>
+                <span class="tm-item-name">Free Drink</span>
+                <span class="tm-item-price">$50</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <hr />
+        <!-- About our cafe -->
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header">About our cafe</h2>
+          <p>
+            Le'to Cafe provides a friendly and relaxing atmosphere to enjoy a variety of meals, cakes, hot and cold drinks. We pride ourselves on our home-cooked food and the quality of our drinks.
+          </p>
+          <p class="tm-mb-0">
+            Visit us and enjoy the unique charms of this cafe. Whether having a cup of our excellent coffee or viewing the latest art installation you will be welcome.
+          </p>
+        </section>
+
+        <hr />
+
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header">Contact Us</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://www.facebook.com/Letocafe1" target="blank" >Facebook</a>
+          
+        </section>
+      </div>
+
+  </body>
+</html>
